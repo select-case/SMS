@@ -1,12 +1,61 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
-    <body>
-        <h2>Student Managment System -  Admin View</h2>
-        <form action="/" method="post">
-            <pre>Username     <input type="text" name="username" required/><br><br></pre>
-            <pre>E-Mail       <input type="text" name="email" required/><br><br></pre>
-            <pre>Password     <input type="password" name="password" required/><br><br></pre>
-            <button type="submit">Submit</button>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/styles/index.css">
+</head>
+
+<body>
+
+    <h2 class="center-align">Student Managment System - Admin View</h2>
+
+    <div class="container row">
+        <form action="/" method="post" class="col s12 container">
+            <div class="container col s6 offset-s3 z-depth-2 center-align admin-container">
+                <div class="admin">
+                    <div class="input-field container">
+                        <input placeholder="Username" id="username" name="username" type="text" class="validate" required>
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="input-field container">
+                        <input placeholder="Email" id="email" name="email" type="text" class="validate" required>
+                        <label for="email">Username</label>
+                    </div>
+                    <div class="input-field container">
+                        <input placeholder="Password" id="password" name="password" type="password" class="validate"
+                            required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="container">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+    
+                </div>
+            </div>
+
         </form>
-    </body>
+
+    </div>
+
+
+
+
+    <!---
+    <h2>Student Managment System - Admin View</h2>
+    <form action="/" method="post">
+        <pre>Username     <input type="text" name="username" required/><br><br></pre>
+        <pre>E-Mail       <input type="text" name="email" required/><br><br></pre>
+        <pre>Password     <input type="password" name="password" required/><br><br></pre>
+        <button type="submit">Submit</button>
+    </form>
+-->
+
+</body>
+
 </html>
